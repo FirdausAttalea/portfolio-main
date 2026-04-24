@@ -7,22 +7,22 @@ const CONTACT_ITEMS = [
   {
     name: 'LinkedIn',
     label: 'Professional Network',
-    url: 'https://linkedin.com/in/agus-budiman'
+    url: 'https://linkedin.com/in/firdausattalea'
   },
   {
     name: 'Instagram',
-    label: '@agus.budimaan',
-    url: 'https://www.instagram.com/agus.budimaan/'
+    label: '@firdausattalea',
+    url: 'https://www.instagram.com/firdausattalea/'
   },
   {
     name: 'GitHub',
     label: 'Projects & Code',
-    url: 'https://github.com/agusbudbudi'
+    url: 'https://github.com/firdausattalea'
   },
   {
     name: 'E-mail',
-    label: 'agus.buddiman@gmail.com',
-    url: 'mailto:agus.buddiman@gmail.com'
+    label: 'attaleayessa@gmail.com',
+    url: 'mailto:attaleayessa@gmail.com'
   }
 ];
 

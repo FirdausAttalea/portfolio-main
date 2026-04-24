@@ -14,19 +14,19 @@ const Hero: React.FC = () => {
               <span className="badge-dot"></span>
               Available for new opportunities
 </div>
-            <h1>Hi, I'm Agus 👋🏻</h1>
-            <h2 className="hero-job-title">Quality Assurance Engineer</h2>
+            <h1>Hi, I'm Firdaus 👋🏻</h1>
+            <h2 className="hero-job-title">Fintech Product Manager</h2>
             <p className="hero-summary">
-              With 6+ years experience in automation & manual testing. 
-              Delivering high-quality software through meticulous analysis and modern testing frameworks.
+              Proven Data Product Manager with 2+ years experience. 
+              Delivering high-quality software through meticulous analysis and modern building frameworks.
             </p>
 
             <div className="hero-highlight-skills">
-              <Badge>Manual Testing</Badge>
-              <Badge>Automation</Badge>
-              <Badge>API Testing</Badge>
-              <Badge>Cypress</Badge>
-              <Badge>Appium</Badge>
+              <Badge>Product Manager</Badge>
+              <Badge>Product Analayst</Badge>
+              <Badge>Data Analyst</Badge>
+              <Badge>Business Analyst</Badge>
+              <Badge>IT Data Specialist</Badge>
             </div>
 
             <div className="hero-cta">
@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
                     <img src="/img/qr-code.png" alt="QR Code" className="id-card-qr-img" />
                   </div>
                   <div className="id-card-photo">
-                    <img src="/img/profile/hero-agus.png" alt="Agus Budiman" />
+                    <img src="/img/profile/hero-firdaus.png" alt="Firdaus Attalea" />
                   </div>
                 </div>
 
