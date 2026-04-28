@@ -16,10 +16,10 @@ const CtaSection: React.FC = () => {
             I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions. Let's build something exceptional together.
           </p>
           <div className="cta-actions">
-            <Button href="/assets/CV_Agus_Budiman_QA_Engineer.pdf" variant="secondary">
+            <Button href="/assets/CV-Achmad Firdaus Attalea Yessa.pdf" variant="secondary">
               <Download size={20} /> Download CV
             </Button>
-            <Button href="https://linkedin.com/in/agus-budiman" variant="primary">
+            <Button href="https://linkedin.com/in/firdausattalea" variant="primary">
               <Linkedin size={20} /> LinkedIn Connect
             </Button>
           </div>

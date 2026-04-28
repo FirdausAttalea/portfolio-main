@@ -1,0 +1,317 @@
+/* ==========================================
+   Organizational Experience Timeline
+   Uses teal/emerald palette to differentiate
+   from Work Experience (purple/accent)
+   ========================================== */
+
+.org-experience-timeline.section {
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.org-experience-timeline .org-timeline-wrapper {
+  position: relative;
+  padding: 5rem 0 6rem;
+  background-color: #0f766e; /* Teal-700 */
+  background-image: linear-gradient(135deg, #0f766e 0%, #0d9488 50%, #14b8a6 100%);
+  border-radius: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+[data-theme='dark'] .org-experience-timeline .org-timeline-wrapper {
+  background-color: #0f766e;
+  background-image: linear-gradient(135deg, #0c6660 0%, #0f766e 50%, #0d9488 100%);
+  border-color: rgba(255, 255, 255, 0.05);
+}
+
+.org-timeline-bg-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10rem;
+  font-weight: 900;
+  color: white;
+  opacity: 0.04;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 0;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+@media (max-width: 992px) {
+  .org-timeline-bg-text {
+    font-size: 7rem;
+    letter-spacing: 0.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .org-timeline-bg-text {
+    font-size: 4rem;
+    letter-spacing: 0.1rem;
+  }
+}
+
+/* ---- Header overrides for teal bg ---- */
+.org-experience-timeline .section-title-new,
+.org-experience-timeline .section-subtitle-new,
+.org-experience-timeline .section-title-new span {
+  color: #ffffff !important;
+}
+
+.org-experience-timeline .section-subtitle-new {
+  opacity: 1;
+}
+
+.org-experience-timeline .header-icon-wrapper.org-icon {
+  background: rgba(255, 255, 255, 0.2) !important;
+  color: #ffffff !important;
+}
+
+.org-experience-timeline .section-header {
+  margin-bottom: 0;
+}
+
+/* ---- "Lihat Detail" button overrides ---- */
+.org-view-btn {
+  white-space: nowrap;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+  color: white !important;
+}
+
+.org-view-btn:hover {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border-color: white !important;
+}
+
+@media (max-width: 768px) {
+  .org-view-btn {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+
+/* ---- Scroll container ---- */
+.org-timeline-scroll-container {
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  margin-top: 3rem;
+}
+
+.org-timeline-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* ---- Timeline rail ---- */
+.org-timeline-rail {
+  position: absolute;
+  top: 30px;
+  left: calc(max(20px, 50vw - 580px) + 175px);
+  right: calc(max(20px, 50vw - 580px) + 175px);
+  height: 2px;
+  background: rgba(255, 255, 255, 0.35);
+  z-index: 1;
+}
+
+/* ---- Timeline items flex row ---- */
+.org-timeline-items {
+  display: flex;
+  gap: 2rem;
+  position: relative;
+  z-index: 2;
+  padding: 0 max(20px, calc(50vw - 580px));
+  width: max-content;
+}
+
+/* ---- Single timeline item ---- */
+.org-timeline-item {
+  flex: 0 0 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* ---- Node / dot ---- */
+.org-timeline-node {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.org-timeline-dot {
+  width: 20px;
+  height: 20px;
+  background: var(--bg-card);
+  border: 4px solid #14b8a6;
+  border-radius: 50%;
+  position: relative;
+  z-index: 3;
+  box-shadow: 0 0 0 6px #0f766e;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.org-timeline-item:hover .org-timeline-dot {
+  transform: scale(1.3);
+  background: white;
+  border-color: white;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+/* ---- Card ---- */
+.org-timeline-content-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: 2rem;
+  width: 100%;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.org-timeline-item:hover .org-timeline-content-card {
+  transform: translateY(-12px);
+  border-color: #14b8a6;
+  box-shadow: 0 20px 40px rgba(20, 184, 166, 0.15);
+}
+
+/* ---- Card main row (logo + text) ---- */
+.org-timeline-card-main {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.org-timeline-logo-wrapper {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 4px 15px var(--shadow);
+}
+
+.org-timeline-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.org-timeline-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.org-timeline-role {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.org-timeline-company {
+  font-size: 0.9rem;
+  color: #0d9488;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* ---- Meta row (period + duration) ---- */
+.org-timeline-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  margin-top: 0.5rem;
+  gap: 0.5rem;
+}
+
+.org-meta-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.org-timeline-period {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.org-type-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: rgba(20, 184, 166, 0.12);
+  color: #0d9488;
+  padding: 0.15rem 0.6rem;
+  border-radius: 100px;
+  border: 1px solid rgba(20, 184, 166, 0.25);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  width: fit-content;
+}
+
+[data-theme='dark'] .org-type-badge {
+  background: rgba(20, 184, 166, 0.2);
+  color: #5eead4;
+  border-color: rgba(20, 184, 166, 0.3);
+}
+
+.org-timeline-duration {
+  font-size: 0.8rem;
+  background: rgba(20, 184, 166, 0.1);
+  color: #0d9488;
+  padding: 0.25rem 0.75rem;
+  border-radius: 100px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+[data-theme='dark'] .org-timeline-duration {
+  background: rgba(20, 184, 166, 0.2);
+  color: #5eead4;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .org-experience-timeline .org-timeline-wrapper {
+    padding: 3rem 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  .org-timeline-rail {
+    left: calc(2rem + 150px);
+  }
+
+  .org-timeline-items {
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+
+  .org-timeline-item {
+    flex: 0 0 300px;
+  }
+}

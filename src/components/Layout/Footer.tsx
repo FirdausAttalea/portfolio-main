@@ -9,8 +9,8 @@ const Footer: React.FC = () => {
     <footer className={isHomePage ? 'footer-blue' : ''}>
       <div className="container">
         <p>
-          &copy; {new Date().getFullYear()} | Crafted with <span className="footer-passion">⚡ Passion</span> by Agus Budiman |
-          QA Engineer Portfolio
+          &copy; {new Date().getFullYear()} | Crafted with <span className="footer-passion">⚡ Passion</span> by Firdaus Attalea |
+          Personal Portfolio
         </p>
       </div>
     </footer>
