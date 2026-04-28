@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { Briefcase, MapPin, GraduationCap, ChevronDown, ChevronUp, Quote, Linkedin } from 'lucide-react';
+import { Briefcase, MapPin, GraduationCap, ChevronDown, ChevronUp, Quote, Linkedin, Users } from 'lucide-react';
 import experienceData from '../data/experience.json';
+import organizationData from '../data/organization.json';
 import educationData from '../data/education.json';
 import endorsementData from '../data/endorsements.json';
 import SectionHeader from '../components/common/SectionHeader';
@@ -10,6 +11,7 @@ import './About.css';
 
 const About: React.FC = () => {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+  const [expandedOrgIndex, setExpandedOrgIndex] = useState<number | null>(null);
   const [expandedEndorsement, setExpandedEndorsement] = useState<number | null>(null);
   const location = useLocation();
 
@@ -30,6 +32,10 @@ const About: React.FC = () => {
     setExpandedIndex(expandedIndex === index ? null : index);
   };
 
+  const toggleOrgExpand = (index: number) => {
+    setExpandedOrgIndex(expandedOrgIndex === index ? null : index);
+  };
+
   const toggleEndorsement = (index: number) => {
     setExpandedEndorsement(expandedEndorsement === index ? null : index);
   };
@@ -40,28 +46,28 @@ const About: React.FC = () => {
       <section className="profile-header-section fade-in visible">
         <div className="profile-card">
           <div className="profile-image-wrapper">
-            <img src="/img/profile/profile-agus.png" alt="Agus Budiman" className="profile-image-new" />
+            <img src="/img/profile/profile-firdaus.png" alt="Firdaus Attalea" className="profile-image-new" />
             <span className="status-dot"></span>
           </div>
           <div className="profile-info">
-            <h1 className="profile-name-new">Agus <span>Budiman</span></h1>
+            <h1 className="profile-name-new">Firdaus <span>Attalea</span></h1>
             <div className="profile-location">
               <MapPin size={16} />
               <span>Jakarta, Indonesia</span>
             </div>
             <div className="profile-badges">
-              <Badge>QA Engineer</Badge>
-              <Badge>Fullstack QA</Badge>
-              <Badge>5+ Years Exp</Badge>
+              <Badge>Product Manager</Badge>
+              <Badge>Fullstack Product</Badge>
+              <Badge>2+ Years Exp</Badge>
             </div>
           </div>
         </div>
         <div className="profile-description">
           <p>
-            <strong>QA Engineer</strong> with 6+ years of experience in Manual and Automation
-            Testing across Healthcare, FinTech, OTA, EduTech, and ITSM
+            <strong>Product Manager</strong> with 2+ years of experience in Product Management
+            across E-commerce, FinTech, EduTech, and ITSM
             domains. Proven ability to analyze requirements, design and
-            execute comprehensive test plans, and collaborate effectively with
+            execute comprehensive product plans, and collaborate effectively with
             cross-functional teams.
           </p>
         </div>
@@ -122,6 +128,69 @@ const About: React.FC = () => {
                 
                 <div className="card-expand-indicator">
                   {expandedIndex === index ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Organizational Experience Section */}
+      <section id="organization" className="section-new fade-in visible">
+        <SectionHeader 
+          icon={<Users size={20} />}
+          iconClassName="org-icon"
+          title="Organizational"
+          titleSpan="Experience"
+          subtitle="My involvement in communities, volunteering, and organizational roles."
+        />
+        
+        <div className="timeline-container">
+          {organizationData.map((org, index) => (
+            <div key={index} className={`timeline-item ${expandedOrgIndex === index ? 'expanded' : ''}`}>
+              <div className="timeline-marker">
+                <div className="marker-dot org-marker-dot"></div>
+                <div className="marker-line"></div>
+              </div>
+              
+              <div className="experience-card-new" onClick={() => toggleOrgExpand(index)}>
+                <div className="card-top">
+                  <div className="card-main-info">
+                    <div className="company-logo-wrapper-new">
+                      <img src={org.logo} alt={org.organization} className="company-logo-new" />
+                    </div>
+                    <div className="company-text-group">
+                      <div className="company-info-row">
+                        <h3 className="company-name">{org.organization}</h3>
+                        {index === 0 && <span className="current-badge org-current-badge">Active</span>}
+                      </div>
+                      <h4 className="role-title-new">{org.role}</h4>
+                    </div>
+                  </div>
+                  <div className="card-side-info">
+                    <span className="period-text">{org.period}</span>
+                  </div>
+                </div>
+
+                <div className="card-meta">
+                  <span>{org.employmentType} · {org.locationType}</span>
+                  <span className="meta-separator">•</span>
+                  <MapPin size={12} />
+                  <span>{org.location}</span>
+                </div>
+
+                <div className={`expandable-content ${expandedOrgIndex === index ? 'is-expanded' : ''}`}>
+                  <div className="card-details-inner">
+                    <ul className="responsibilities-list">
+                      {org.responsibilities.map((resp, i) => (
+                        <li key={i}>{resp}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+                
+                <div className="card-expand-indicator">
+                  {expandedOrgIndex === index ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
                 </div>
               </div>
             </div>
