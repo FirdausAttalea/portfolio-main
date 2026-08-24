@@ -4,7 +4,6 @@ import certData from '../data/certifications.json';
 import articleData from '../data/articles.json';
 import SectionHeader from '../components/common/SectionHeader';
 import Badge from '../components/common/Badge';
-import './Certifications.css';
 
 const Certifications: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'certs' | 'articles'>('certs');

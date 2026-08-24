@@ -4,7 +4,6 @@ import projectsData from '../data/projects.json';
 import deliverablesData from '../data/deliverables.json';
 import SectionHeader from '../components/common/SectionHeader';
 import ProjectCard from '../components/common/ProjectCard';
-import './Projects.css';
 
 const Projects: React.FC = () => {
   const sliderRef = React.useRef<HTMLDivElement>(null);

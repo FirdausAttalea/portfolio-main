@@ -2,7 +2,6 @@ import React from 'react';
 import { ArrowRight, Mail } from 'lucide-react';
 import Badge from '../common/Badge';
 import Button from '../common/Button';
-import './Hero.css';
 
 const Hero: React.FC = () => {
   return (

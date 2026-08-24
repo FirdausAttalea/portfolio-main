@@ -3,7 +3,6 @@ import { Briefcase, ArrowUpRight } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 import experienceData from '../../data/experience.json';
 import SectionHeader from '../common/SectionHeader';
-import './WorkExperienceTimeline.css';
 
 const WorkExperienceTimeline: React.FC = () => {
   const calculateDuration = (period: string) => {

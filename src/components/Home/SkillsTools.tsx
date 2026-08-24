@@ -1,7 +1,6 @@
 import React from 'react';
 import { FlaskConical, Database, ShieldCheck, Cpu, Wrench } from 'lucide-react';
 import SectionHeader from '../common/SectionHeader';
-import './SkillsTools.css';
 
 const SKILL_CATEGORIES = [
   {

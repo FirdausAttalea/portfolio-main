@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom';
 import { ArrowUpRight, Rocket } from 'lucide-react';
 import SectionHeader from '../common/SectionHeader';
 import ProjectCard from '../common/ProjectCard';
-import './FeaturedProjects.css';
 
 const FeaturedProjects: React.FC = () => {
   // Take first 4 projects for featured section

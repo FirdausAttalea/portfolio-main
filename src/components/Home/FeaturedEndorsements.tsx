@@ -3,7 +3,6 @@ import { Quote, Linkedin, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import endorsementData from '../../data/endorsements.json';
 import SectionHeader from '../common/SectionHeader';
-import './FeaturedEndorsements.css';
 
 const FeaturedEndorsements: React.FC = () => {
   const [expandedEndorsement, setExpandedEndorsement] = useState<number | null>(null);

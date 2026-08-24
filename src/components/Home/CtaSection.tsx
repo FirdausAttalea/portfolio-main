@@ -1,7 +1,6 @@
 import React from 'react';
 import { Download, Linkedin } from 'lucide-react';
 import Button from '../common/Button';
-import './CtaSection.css';
 
 const CtaSection: React.FC = () => {
   return (

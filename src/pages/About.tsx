@@ -7,7 +7,6 @@ import educationData from '../data/education.json';
 import endorsementData from '../data/endorsements.json';
 import SectionHeader from '../components/common/SectionHeader';
 import Badge from '../components/common/Badge';
-import './About.css';
 
 const About: React.FC = () => {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);

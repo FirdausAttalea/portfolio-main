@@ -3,7 +3,6 @@ import { Users, ArrowUpRight } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 import organizationData from '../../data/organization.json';
 import SectionHeader from '../common/SectionHeader';
-import './OrganizationExperience.css';
 
 const OrganizationExperienceTimeline: React.FC = () => {
   const calculateDuration = (period: string) => {
