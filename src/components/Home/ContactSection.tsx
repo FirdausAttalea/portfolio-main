@@ -1,7 +1,6 @@
 import React from 'react';
 import { Linkedin, Instagram, Github, Mail, ArrowUpRight, MessageCircle } from 'lucide-react';
 import SectionHeader from '../common/SectionHeader';
-import './ContactSection.css';
 
 const CONTACT_ITEMS = [
   {

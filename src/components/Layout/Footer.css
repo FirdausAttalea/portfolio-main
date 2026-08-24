@@ -17,16 +17,16 @@ footer .footer-passion {
 }
 
 /* Home Page specific footer styling */
-footer.footer-blue {
-  background: linear-gradient(135deg, #2590ff 0%, #0055ff 100%);
+footer.footer-purple {
+  background: linear-gradient(135deg, #c084fc 0%, #a855f7 50%, #7c3aed 100%);
   border-top: none;
   color: white;
 }
 
-footer.footer-blue p {
+footer.footer-purple p {
   color: rgba(255, 255, 255, 0.9);
 }
 
-footer.footer-blue .footer-passion {
+footer.footer-purple .footer-passion {
   color: #ffffff;
 }

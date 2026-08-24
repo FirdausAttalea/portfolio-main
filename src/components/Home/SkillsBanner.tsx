@@ -1,5 +1,4 @@
 import React from 'react';
-import './SkillsBanner.css';
 
 const SKILLS = [
   'MANUAL TESTING', 'AUTOMATION', 'API TESTING', 'JAVASCRIPT', 

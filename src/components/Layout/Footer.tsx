@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
   const isHomePage = location.pathname === '/';
 
   return (
-    <footer className={isHomePage ? 'footer-blue' : ''}>
+    <footer className={isHomePage ? 'footer-purple' : ''}>
       <div className="container">
         <p>
           &copy; {new Date().getFullYear()} | Crafted with <span className="footer-passion">⚡ Passion</span> by Firdaus Attalea |
