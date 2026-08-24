@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { Sun, Moon, Menu, X } from 'lucide-react';
 import { useTheme } from '../../context/ThemeContext';
-import './Navbar.css';
 
 const Navbar: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
