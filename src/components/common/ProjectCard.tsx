@@ -1,6 +1,5 @@
 import React from 'react';
 import { ArrowUpRight, FlaskConical, BarChart3, Receipt, Briefcase } from 'lucide-react';
-import './ProjectCard.css';
 
 interface Tool {
   name: string;
