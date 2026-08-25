@@ -1,12 +1,32 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { ArrowUpRight, ChevronLeft, ChevronRight, Layers, Rocket } from 'lucide-react';
-import projectsData from '../data/projects.json';
+import projectsDataFallback from '../data/projects.json';
 import deliverablesData from '../data/deliverables.json';
 import SectionHeader from '../components/common/SectionHeader';
 import ProjectCard from '../components/common/ProjectCard';
 
 const Projects: React.FC = () => {
   const sliderRef = React.useRef<HTMLDivElement>(null);
+  const [projects, setProjects] = useState<any[]>(projectsDataFallback);
+
+  useEffect(() => {
+    // Fetch data dari API Backend Express (PostgreSQL)
+    fetch('http://localhost:5000/api/projects')
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error('Gagal mengambil data dari server');
+        }
+        return res.json();
+      })
+      .then((data) => {
+        if (Array.isArray(data) && data.length > 0) {
+          setProjects(data);
+        }
+      })
+      .catch((err) => {
+        console.warn('Backend server tidak aktif atau error, menggunakan fallback JSON:', err);
+      });
+  }, []);
 
   const scroll = (direction: 'left' | 'right') => {
     if (sliderRef.current) {
@@ -70,12 +90,12 @@ const Projects: React.FC = () => {
           subtitle="Highlighted projects, from career milestones to personal growth."
         />
         <div className="projects-grid">
-          {projectsData.map((project, index) => (
+          {projects.map((project, index) => (
             <ProjectCard 
-              key={index} 
+              key={project.id || index} 
               project={project} 
               buttonText="See Project"
-              buttonClass="btn-small" /* Changed to btn-small for consistency with Home page */
+              buttonClass="btn-small"
             />
           ))}
         </div>
