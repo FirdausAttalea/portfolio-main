@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
       <nav className="container">
         <Link to="/" className="logo" onClick={closeMenu}>
           <div className="logo-container">
-            <img src="/img/profile/logo-portfolio.png" alt="Logo" className="logo-img" />
+            <img src="/favicon.png" alt="Logo" className="logo-img" />
             <span className="nav-status-dot"></span>
           </div>
           Firdaus<span>Attalea</span>
