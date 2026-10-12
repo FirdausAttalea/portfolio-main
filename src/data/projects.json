@@ -1,0 +1,72 @@
+[
+  {
+    "id": "appnea",
+    "title": "Appnea: Breathe Better, Sleep Smarter",
+    "type": "National Competition",
+    "date": "May 2025",
+    "duration": "2 Months",
+    "role": "Product Manager, UI/UX Designer",
+    "description": "An AI-powered sleep monitoring application that analyzes breathing sounds and patterns through a smartphone to help users identify potential sleep apnea risks without additional medical devices.",
+    "image": "/img/banner/appnea-banner.png",
+    "icon": "uil-moon",
+    "link": "#",
+    "achievement": "3rd Place UX Competition FindIT UGM 2025",
+    "tags": ["AI", "Health", "Mobile Design", "UX Research"],
+    "tools": [
+      { "name": "Figma", "src": "/img/tools/figma-logo.png" },
+      { "name": "FigJam", "src": "/img/tools/figjam-logo.png" }
+    ]
+  },
+  {
+    "id": "liboorin",
+    "title": "LiboorIn: Enhance Your Travel Experience",
+    "type": "National Competition",
+    "date": "Aug 2024",
+    "duration": "1 Month",
+    "role": "Product Manager",
+    "description": "A travel platform designed to help travelers discover and experience local destinations in Indonesia more easily through integrated destination recommendations, local tour guide services, and ticket booking.",
+    "image": "/img/banner/liboorin-banner.png",
+    "icon": "uil-map",
+    "link": "#",
+    "achievement": "1st Place UI/UX Competition ITFEST Micro IPB 2023",
+    "tags": ["Tourism", "Mobile Design", "User Research"],
+    "tools": [
+      { "name": "Figma", "src": "/img/tools/figma-logo.png" },
+      { "name": "FigJam", "src": "/img/tools/figjam-logo.png" }
+    ]
+  },
+  {
+    "id": "incareer",
+    "title": "InCareer: Inclusive Job Platform",
+    "type": "Self Project",
+    "date": "Apr 2024",
+    "duration": "< 1 Month",
+    "role": "Product Manager",
+    "description": "A platform designed to help people with physical disabilities find job opportunities that match their skills and abilities through a simple and accessible process: choose, apply, and wait.",
+    "image": "/img/banner/incareer-banner.png",
+    "icon": "uil-briefcase-alt",
+    "link": "#",
+    "tags": ["Accessibility", "Inclusion", "Mobile Design"],
+    "tools": [
+      { "name": "Figma", "src": "/img/tools/figma-logo.png" }
+    ]
+  },
+  {
+    "id": "ecowardrobe",
+    "title": "EcoWardrobe: Build a Better Environment",
+    "type": "National Competition",
+    "date": "Sep 2024",
+    "duration": "< 1 Month",
+    "role": "Product Manager, UI/UX Designer",
+    "description": "A sustainable fashion platform designed to help people reduce fast fashion waste by extending the lifecycle of clothing through selling, buying, and donating wearable clothing.",
+    "image": "/img/banner/ecowardrobe-banner.png",
+    "icon": "uil-leaf",
+    "link": "#",
+    "achievement": "2nd Runner Up UI/UX Competition The Ace Universitas Diponegoro 2024",
+    "tags": ["Sustainability", "Fashion", "SDG 12"],
+    "tools": [
+      { "name": "Figma", "src": "/img/tools/figma-logo.png" },
+      { "name": "FigJam", "src": "/img/tools/figjam-logo.png" }
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "institution": "Universitas Brawijaya",
+    "degree": "Bachelor of Information Systems (S.Kom)",
+    "major": "Information Systems",
+    "period": "Aug 2022 - Jan 2026",
+    "gpa": "3.79 / 4.00",
+    "logo": "/img/company/ub-logo.png"
+  },
+  {
+    "institution": "SMA Negeri 2 Surabaya",
+    "degree": "High School Diploma",
+    "major": "Science",
+    "period": "2019 - 2022",
+    "logo": "/img/company/sman2sby-logo.png"
+  }
+]

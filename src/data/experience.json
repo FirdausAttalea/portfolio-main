@@ -1,0 +1,43 @@
+[
+  {
+    "company": "PT CIMB Niaga Tbk.",
+    "logo": "/img/company/cimb-logo.png",
+    "role": "Product Designer Intern",
+    "period": "Apr 2026 - Present",
+    "responsibilities": [
+      "Identified usability issues in ARJUNA's employee workflows, redesigned user flows and interface solutions to improve HR service accessibility, resulting in a 25% improvement in task completion rate and 30% reduction in user navigation steps.",
+      "Evaluated existing ARJUNA user journeys and identified friction points, optimized information architecture and interaction patterns, reducing user effort by 35% for selected employee processes."
+    ],
+    "employmentType": "Intern",
+    "locationType": "Hybrid",
+    "location": "Tangerang, Indonesia"
+  },
+  {
+    "company": "Magna Partners",
+    "logo": "/img/company/magna-logo.png",
+    "role": "Product Manager Intern",
+    "period": "Sept 2025 - Mar 2026",
+    "responsibilities": [
+      "Authored 20+ user stories and Product Requirements Documents (PRDs) by synthesizing stakeholder interviews, business requirements, and technical constraints. Serving as the single source of truth for the engineering and design teams.",
+      "Introduced structured backlog prioritization using MoSCoW and effort-impact scoring, which directly contributed to more predictable sprint completion and reduced late-stage scope changes.",
+      "Managed sprint planning and backlog grooming in Jira and Notion across 2-week Agile cycles, improving cross-team task visibility and reducing misaligned deliverables by an estimated 20%."
+    ],
+    "employmentType": "Intern",
+    "locationType": "Hybrid",
+    "location": "Malang, Indonesia"
+  },
+  {
+    "company": "PT Sekawan Media Informatika",
+    "logo": "/img/company/sekawan-media-logo.png",
+    "role": "Project Manager Intern",
+    "period": "Jan 2025 - Jul 2025",
+    "responsibilities": [
+      "Analyzed business and user requirements through structured stakeholder interviews and requirements gathering sessions, translating needs into clear technical specifications for cross-functional development teams.",
+      "Managed end-to-end SDLC delivery for a client-facing software project using Jira and Notion. Aligning business objectives with technical execution and reducing task delays by 25% through proactive bottleneck identification.",
+      "Conducted structured gap analysis between client requirements and development output, achieving full alignment on acceptance criteria and accelerating sprint cycles by 15%."
+    ],
+    "employmentType": "Intern",
+    "locationType": "Hybrid",
+    "location": "Malang, Indonesia"
+  }
+]

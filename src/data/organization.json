@@ -1,0 +1,42 @@
+[
+  {
+    "organization": "Raion Community",
+    "logo": "/img/company/raion-logo.png",
+    "role": "Head of Product Learning Path",
+    "period": "Dec 2024 - Dec 2025",
+    "responsibilities": [
+      "Leading intensive Product Management bootcamp for 20 high-potential professionals, delivering hands-on training in business strategy and technical development with 90% completion rate.",
+      "Directed a specialized PM talent program by mentoring 15 future leaders in product strategy and technical requirements, resulting in a 90% program completion rate.",
+      "Orchestrated a 12-month product roadmap by integrating Agile methodologies and market trends, leading to the successful conceptualization of 3+ new product initiatives with a 95% stakeholder approval rating."
+    ],
+    "employmentType": "Community",
+    "locationType": "Hybrid",
+    "location": "Malang, Indonesia"
+  },
+  {
+    "organization": "Faculty of Computer Science, Universitas Brawijaya",
+    "logo": "/img/company/filkom-logo.png",
+    "role": "Data Engineer Laboratory Coordinator",
+    "period": "Jul 2024 - Dec 2024",
+    "responsibilities": [
+      "Delivered practical ETL lab sessions for 60+ students using Talend and Apache Spark, driving an 80% improvement in troubleshooting proficiency across the cohort.",
+      "Optimized SQL-based grading and data management workflows, reducing manual processing time by 10 hours per week while maintaining 100% data integrity across all student records."
+    ],
+    "employmentType": "Volunteer",
+    "locationType": "Onsite",
+    "location": "Malang, Indonesia"
+  },
+  {
+    "organization": "Google Developer Groups on Campus (GDGoC)",
+    "logo": "/img/company/gdgoc-logo.png",
+    "role": "Product Design Path Member",
+    "period": "Feb 2023 - Dec 2023",
+    "responsibilities": [
+      "Spearheaded end-to-end UI/UX Design using Figma for project prototypes that secured 1st Place at ITFEST IPB and other national awards.",
+      "Collaborated with developer teams in Agile environments to translate requirements into high-fidelity prototypes, ensuring technical alignment and delivery 95% project efficiency."
+    ],
+    "employmentType": "Community",
+    "locationType": "Onsite",
+    "location": "Malang, Indonesia"
+  }
+]

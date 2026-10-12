@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Working in a Digital World: Professional Skills",
+    "issuer": "IBM SkillsBuild",
+    "year": "2024",
+    "image": "/img/certificattion/ibm-digital-world.jpg",
+    "verifyLink": "#"
+  },
+  {
+    "title": "Project Management Fundamentals",
+    "issuer": "IBM SkillsBuild",
+    "year": "2024",
+    "image": "/img/certificattion/ibm-pm.jpg",
+    "verifyLink": "#"
+  },
+  {
+    "title": "Microsoft Office Certification",
+    "issuer": "Microsoft",
+    "year": "2025",
+    "image": "/img/certificattion/microsoft-office.jpg",
+    "verifyLink": "#"
+  },
+  {
+    "title": "R Fundamental for Data Science",
+    "issuer": "DQLabs",
+    "year": "2026",
+    "image": "/img/certificattion/dqlabs-r.jpg",
+    "verifyLink": "#"
+  }
+]
