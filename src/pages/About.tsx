@@ -52,22 +52,22 @@ const About: React.FC = () => {
             <h1 className="profile-name-new">Firdaus <span>Attalea</span></h1>
             <div className="profile-location">
               <MapPin size={16} />
-              <span>Jakarta, Indonesia</span>
+              <span>South Jakarta, Indonesia</span>
             </div>
             <div className="profile-badges">
               <Badge>Product Manager</Badge>
-              <Badge>Fullstack Product</Badge>
-              <Badge>2+ Years Exp</Badge>
+              <Badge>Product Designer</Badge>
+              <Badge>1+ Year Exp</Badge>
             </div>
           </div>
         </div>
         <div className="profile-description">
           <p>
-            <strong>Product Manager</strong> with 2+ years of experience in Product Management
-            across E-commerce, FinTech, EduTech, and ITSM
-            domains. Proven ability to analyze requirements, design and
-            execute comprehensive product plans, and collaborate effectively with
-            cross-functional teams.
+            Fresh <strong>Information Systems</strong> graduate (GPA 3.79/4.00, Universitas Brawijaya) with 1+ year
+            of hands-on experience as a Product Manager and Project Manager intern. Proven ability to bridge business
+            and technical teams by translating user research, gap analysis, and stakeholder requirements into
+            prioritized backlogs, PRDs, and working product features. Multiple national UI/UX competition winner.
+            Actively seeking roles in Product Management, Business Analysis, or Data Analytics.
           </p>
         </div>
       </section>
@@ -220,6 +220,9 @@ const About: React.FC = () => {
                     <strong>{edu.degree}</strong> · {edu.major}
                   </p>
                   <span className="edu-period">{edu.period}</span>
+                  {(edu as any).gpa && (
+                    <span className="edu-gpa">GPA: {(edu as any).gpa}</span>
+                  )}
                 </div>
               </div>
             </div>
