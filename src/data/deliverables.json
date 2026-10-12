@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Product Initiation Document",
+    "description": "A comprehensive document that outlines the vision, goals, scope, and requirements for a new product.",
+    "image": "/img/banner/testplan-banner.png"
+  },
+  {
+    "title": "Product Journey",
+    "description": "",
+    "image": "/img/banner/testcases-banner.png"
+  },
+  {
+    "title": "Product Execution",
+    "description": "From results to clarity, providing insights that enable smarter decision-making.",
+    "image": "/img/banner/testreport-banner.png"
+  }
+]

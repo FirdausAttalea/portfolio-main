@@ -590,6 +590,18 @@ main {
   margin-top: 0.25rem;
 }
 
+.edu-gpa {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: rgba(var(--accent-rgb, 99, 102, 241), 0.12);
+  border: 1px solid rgba(var(--accent-rgb, 99, 102, 241), 0.25);
+  border-radius: 20px;
+  padding: 0.15rem 0.7rem;
+  margin-top: 0.4rem;
+}
+
 /* Endorsements */
 .endorsement-grid {
   display: grid;

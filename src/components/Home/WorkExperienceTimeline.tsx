@@ -42,7 +42,7 @@ const WorkExperienceTimeline: React.FC = () => {
               subtitle="My professional journey and career growth."
             />
             <NavLink to="/about#experience" className="btn btn-outline view-detail-btn">
-              Lihat Detail <ArrowUpRight size={18} />
+              View Detail <ArrowUpRight size={18} />
             </NavLink>
           </div>
         </div>

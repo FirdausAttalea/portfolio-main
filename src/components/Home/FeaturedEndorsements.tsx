@@ -26,7 +26,7 @@ const FeaturedEndorsements: React.FC = () => {
             subtitle="Testimonials from colleagues and leaders I've collaborated with."
           />
           <Link to="/about#endorsement" className="btn btn-outline view-all-btn">
-            Lihat Semua <ArrowRight size={18} />
+            View All <ArrowRight size={18} />
           </Link>
         </div>
 

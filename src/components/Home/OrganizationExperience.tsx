@@ -42,7 +42,7 @@ const OrganizationExperienceTimeline: React.FC = () => {
               subtitle="My journey in communities, volunteering, and organizational roles."
             />
             <NavLink to="/about#organization" className="btn btn-outline view-detail-btn org-view-btn">
-              Lihat Detail <ArrowUpRight size={18} />
+              View Detail <ArrowUpRight size={18} />
             </NavLink>
           </div>
         </div>

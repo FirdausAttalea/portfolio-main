@@ -12,28 +12,28 @@ const Hero: React.FC = () => {
             <div className="hero-badge">
               <span className="badge-dot"></span>
               Available for new opportunities
-</div>
+            </div>
             <h1>Hi, I'm Firdaus 👋🏻</h1>
-            <h2 className="hero-job-title">Fintech Product Manager</h2>
+            <h2 className="hero-job-title">Product Manager & UX Designer</h2>
             <p className="hero-summary">
-              Proven Data Product Manager with 2+ years experience. 
-              Delivering high-quality software through meticulous analysis and modern building frameworks.
+              Fresh Information Systems graduate (GPA 3.79, Universitas Brawijaya) with 1+ year of hands-on
+              experience as a Product Manager and Project Manager intern. Multiple national UI/UX competition winner.
             </p>
 
             <div className="hero-highlight-skills">
               <Badge>Product Manager</Badge>
-              <Badge>Product Analayst</Badge>
-              <Badge>Data Analyst</Badge>
+              <Badge>Product Designer</Badge>
               <Badge>Business Analyst</Badge>
-              <Badge>IT Data Specialist</Badge>
+              <Badge>Data Analytics</Badge>
+              <Badge>UI/UX Designer</Badge>
             </div>
 
             <div className="hero-cta">
               <Button to="/projects" variant="primary">
-                Lihat Portfolio <ArrowRight size={20} />
+                View Portfolio <ArrowRight size={20} />
               </Button>
               <Button href="/#contact" variant="secondary">
-                Hubungi Saya <Mail size={20} />
+                Contact Me <Mail size={20} />
               </Button>
             </div>
           </div>
@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
                 
                 <div className="id-card-top">
                   <div className="id-card-header">
-                    <img src="/img/diricare-logo.png" alt="Diricare" className="id-card-logo" />
+                    <img src="/img/company/cimb-logo.png" alt="Portfolio" className="id-card-logo" />
                     <img src="/img/qr-code.png" alt="QR Code" className="id-card-qr-img" />
                   </div>
                   <div className="id-card-photo">
@@ -56,7 +56,8 @@ const Hero: React.FC = () => {
                 <div className="id-card-bottom">
                   <div className="id-card-info">
                     <h3 className="id-card-name">Firdaus Attalea</h3>
-                    <p className="id-card-role">Product Manager</p>
+                    <p className="id-card-role">Product Manager · IS UB'22</p>
+                    <p className="id-card-location">South Jakarta, Indonesia</p>
                   </div>
                 </div>
               </div>

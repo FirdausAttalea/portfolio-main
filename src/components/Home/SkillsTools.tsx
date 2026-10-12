@@ -1,53 +1,54 @@
 import React from 'react';
-import { FlaskConical, Database, ShieldCheck, Cpu, Wrench } from 'lucide-react';
+import { Layers, Database, BarChart2, Cpu, Wrench } from 'lucide-react';
 import SectionHeader from '../common/SectionHeader';
 
 const SKILL_CATEGORIES = [
   {
-    title: 'Automation & Core',
-    icon: <FlaskConical className="category-icon" />,
+    title: 'Product & Design',
+    icon: <Layers className="category-icon" />,
     skills: [
-      { name: 'Cypress (Javascript)', level: 'Advanced', icon: '/img/tools/cypress-logo.svg' },
-      { name: 'Appium (Mobile)', level: 'Intermediate', icon: '/img/tools/appium-logo.png' },
-      { name: 'Webdriver.io', level: 'Intermediate', icon: '/img/tools/webdriver-io-logo.png' },
-      { name: 'Javascript', level: 'Advanced', icon: '/img/tools/javascript-logo.png' },
-      { name: 'Node.js', level: 'Intermediate', icon: '/img/tools/node-js-logo.png' },
-      { name: 'Allure Report', level: 'Advanced', icon: '/img/tools/allure-logo.png' }
+      { name: 'PRD & User Stories', level: 'Advanced', icon: '/img/tools/figma-logo.png' },
+      { name: 'Figma (High-Fidelity)', level: 'Advanced', icon: '/img/tools/figma-logo.png' },
+      { name: 'FigJam', level: 'Advanced', icon: '/img/tools/figjam-logo.png' },
+      { name: 'User Journey Mapping', level: 'Advanced', icon: '/img/tools/figma-logo.png' },
+      { name: 'Wireframing', level: 'Advanced', icon: '/img/tools/figma-logo.png' },
+      { name: 'Backlog Prioritization (MoSCoW)', level: 'Advanced', icon: '/img/tools/jira-logo.png' }
     ]
   },
   {
-    title: 'API, Performance & SQL',
+    title: 'Data & Analytics',
     icon: <Database className="category-icon" />,
     skills: [
-      { name: 'Postman (API Testing)', level: 'Advanced', icon: '/img/tools/postman-logo.png' },
-      { name: 'REST API & JSON', level: 'Advanced', icon: '/img/tools/rest-api-logo.png' },
-      { name: 'SQL & Database', level: 'Advanced', icon: '/img/tools/sql-logo.png' },
-      { name: 'DBeaver', level: 'Advanced', icon: '/img/tools/dbeaver-logo.png' },
-      { name: 'JMeter', level: 'Beginner', icon: '/img/tools/jmeter-logo.png' }
+      { name: 'SQL', level: 'Advanced', icon: '/img/tools/sql-logo.png' },
+      { name: 'Power BI', level: 'Advanced', icon: '/img/tools/powerbi-logo.png' },
+      { name: 'Tableau', level: 'Intermediate', icon: '/img/tools/tableau-logo.png' },
+      { name: 'Python', level: 'Intermediate', icon: '/img/tools/python-logo.png' },
+      { name: 'R', level: 'Intermediate', icon: '/img/tools/r-logo.png' },
+      { name: 'Looker Studio', level: 'Intermediate', icon: '/img/tools/looker-logo.png' }
     ]
   },
   {
-    title: 'Management & Debug',
-    icon: <ShieldCheck className="category-icon" />,
+    title: 'Project Management',
+    icon: <BarChart2 className="category-icon" />,
     skills: [
-      { name: 'Jira & Confluence', level: 'Advanced', icon: '/img/tools/jira-logo.png' },
-      { name: 'Asana', level: 'Advanced', icon: '/img/tools/asana-logo.png' },
-      { name: 'TestRail', level: 'Advanced', icon: '/img/tools/testrail-logo.png' },
-      { name: 'Adaptavist', level: 'Advanced', icon: '/img/tools/adaptavist-logo.png' },
-      { name: 'Charles & Proxyman', level: 'Advanced', icon: '/img/tools/charles-proxy-logo.png' },
-      { name: 'Crashlytics & App Center', level: 'Advanced', icon: '/img/tools/crashlytics-logo.png' }
+      { name: 'Jira', level: 'Advanced', icon: '/img/tools/jira-logo.png' },
+      { name: 'Notion', level: 'Advanced', icon: '/img/tools/notion-logo.png' },
+      { name: 'Trello', level: 'Advanced', icon: '/img/tools/trello-logo.png' },
+      { name: 'Asana', level: 'Intermediate', icon: '/img/tools/asana-logo.png' },
+      { name: 'Agile / Scrum', level: 'Advanced', icon: '/img/tools/jira-logo.png' },
+      { name: 'Sprint Planning', level: 'Advanced', icon: '/img/tools/notion-logo.png' }
     ]
   },
   {
-    title: 'DevOps, Mobile & Tools',
+    title: 'Dev Exposure & Tools',
     icon: <Cpu className="category-icon" />,
     skills: [
-      { name: 'CI/CD (Jenkins, Git)', level: 'Intermediate', icon: '/img/tools/jenkins-logo.svg' },
-      { name: 'GitHub', level: 'Advanced', icon: '/img/tools/github-logo.png' },
-      { name: 'GitLab', level: 'Advanced', icon: '/img/tools/gitlab-logo.png' },
-      { name: 'Android & iOS', level: 'Advanced', icon: '/img/tools/android-logo.png' },
-      { name: 'VS Code', level: 'Advanced', icon: '/img/tools/vsc-logo.png' },
-      { name: 'Sourcetree', level: 'Advanced', icon: '/img/tools/sourcetree-logo.png' }
+      { name: 'GitHub', level: 'Intermediate', icon: '/img/tools/github-logo.png' },
+      { name: 'Draw.io', level: 'Advanced', icon: '/img/tools/figma-logo.png' },
+      { name: 'Bizagi', level: 'Intermediate', icon: '/img/tools/figma-logo.png' },
+      { name: 'API Familiarity', level: 'Beginner', icon: '/img/tools/rest-api-logo.png' },
+      { name: 'Google Workspace', level: 'Advanced', icon: '/img/tools/google-chat-logo.webp' },
+      { name: 'Microsoft Office', level: 'Advanced', icon: '/img/tools/powerbi-logo.png' }
     ]
   }
 ];
@@ -61,7 +62,7 @@ const SkillsTools: React.FC = () => {
           iconClassName="skills-icon"
           title="Skills &"
           titleSpan="Tools"
-          subtitle="The technical arsenal I use to ensure software quality."
+          subtitle="The product, design, and data tools I use to build impactful digital products."
         />
 
         <div className="skills-categories">
