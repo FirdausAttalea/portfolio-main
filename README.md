@@ -1,10 +1,10 @@
-![alt text](image.png)
+
 
 # 🧪 Firdaus Attalea — Product Manager Portfolio
 
 A modern, responsive personal portfolio website built with **React + TypeScript + Vite**, showcasing my experience, projects, skills, and certifications as a Product Manager.
 
-🌐 **Live Site:** [portfolio-qa-agus.vercel.app](https://portfolio-qa-agus.vercel.app/) 
+🌐 **Live Site:** [portfolio-firdausattalea.vercel.app](https://portfolio-firdausattalea.vercel.app) 
 
 ---
 
