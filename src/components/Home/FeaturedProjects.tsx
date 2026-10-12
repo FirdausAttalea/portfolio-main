@@ -21,7 +21,7 @@ const FeaturedProjects: React.FC = () => {
             subtitle="A glimpse of my latest work and contributions."
           />
           <NavLink to="/projects" className="btn btn-outline view-all-btn">
-            Lihat Semua <ArrowUpRight size={18} />
+            View All <ArrowUpRight size={18} />
           </NavLink>
         </div>
         <div className="projects-grid">
