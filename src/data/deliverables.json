@@ -1,17 +1,53 @@
 [
   {
-    "title": "Product Initiation Document",
-    "description": "A comprehensive document that outlines the vision, goals, scope, and requirements for a new product.",
-    "image": "/img/banner/testplan-banner.png"
+    "id": "product-initiation-document",
+    "title": "Product Initiatives Document",
+    "subtitle": "Test Plan & Verification Strategy",
+    "part": "Part A: Test Plan",
+    "category": "Quality & Verification Strategy",
+    "description": "Comprehensive verification framework for Task Monitoring & Approval Dashboard MVP covering FR01-FR20, non-functional targets, multi-tier testing, and launch gate criteria.",
+    "image": "/img/product/testplan-banner.png",
+    "badge": "Test Plan v0.1",
+    "icon": "shield-check",
+    "stats": [
+      { "label": "Requirements", "value": "20 FRs" },
+      { "label": "Edge Cases", "value": "10 ECs" },
+      { "label": "Target Load", "value": "500 Users" }
+    ],
+    "highlights": ["Centralized Task Visibility", "Approval SLA Tracking", "Overdue Detection (15m)", "Server-side RBAC"]
   },
   {
+    "id": "product-journey",
     "title": "Product Journey",
-    "description": "",
-    "image": "/img/banner/testcases-banner.png"
+    "subtitle": "Personas, Lifecycle & User Flows",
+    "part": "Part B: Product Journey",
+    "category": "User Experience & Lifecycle",
+    "description": "End-to-end 9-stage lifecycle mapping 4 key personas (Priya, Reza, Sandra, Adam) with interactive step flows, moments of truth, and operational pain-point remedies.",
+    "image": "/img/product/testcase-banner.png",
+    "badge": "Journey Map",
+    "icon": "compass",
+    "stats": [
+      { "label": "Lifecycle", "value": "9 Stages" },
+      { "label": "Personas", "value": "4 Roles" },
+      { "label": "SLA Target", "value": "≤ 2 Days" }
+    ],
+    "highlights": ["Role-Based Dashboards", "Proactive Alerting", "Executive Summary", "Zero-Meeting Reviews"]
   },
   {
+    "id": "product-execution",
     "title": "Product Execution",
-    "description": "From results to clarity, providing insights that enable smarter decision-making.",
-    "image": "/img/banner/testreport-banner.png"
+    "subtitle": "Sprint Roadmap & Engineering Plan",
+    "part": "Part C: Product Execution",
+    "category": "Sprint Delivery & Roadmap",
+    "description": "8-10 week delivery roadmap spanning 4 two-week sprints (167 story points) with technical constraints, risk registers, scheduled cron jobs, and launch checklists.",
+    "image": "/img/product/testreporting-banner.png",
+    "badge": "Sprint Roadmap",
+    "icon": "git-pull-request",
+    "stats": [
+      { "label": "Sprints", "value": "4 Sprints" },
+      { "label": "Story Points", "value": "167 Pts" },
+      { "label": "Target Release", "value": "Q3 2026" }
+    ],
+    "highlights": ["P0/P1 Prioritization", "15m Overdue Cron", "WebSocket & SSE", "Pilot Readiness Gate"]
   }
 ]
