@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowUpRight, Layers, Rocket, Sparkles, FileText, CheckCircle2 } from 'lucide-react';
+import { ArrowUpRight, Layers, Rocket, Sparkles } from 'lucide-react';
 import { useReducedMotion } from 'framer-motion';
 import projectsDataFallback from '../data/projects.json';
 import deliverablesData from '../data/deliverables.json';
