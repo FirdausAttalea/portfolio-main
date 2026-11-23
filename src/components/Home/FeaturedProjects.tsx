@@ -30,7 +30,7 @@ const FeaturedProjects: React.FC = () => {
               key={index} 
               project={project} 
               maxTools={3} 
-              buttonText="See Project"
+              buttonText="See Details"
               buttonClass="btn-small"
             />
           ))}
