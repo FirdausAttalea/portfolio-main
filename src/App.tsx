@@ -8,6 +8,7 @@ import Projects from './pages/Projects';
 import ProjectDetail from './pages/ProjectDetail';
 import Certifications from './pages/Certifications';
 import DeliverableDetail from './pages/DeliverableDetail';
+import CodingProjectDetail from './pages/CodingProjectDetail';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/projects/:id" element={<ProjectDetail />} />
+              <Route path="/coding/:id" element={<CodingProjectDetail />} />
               
               {/* Product Documentation Routes (Distinct route: /product/:id) */}
               <Route path="/product/:id" element={<DeliverableDetail />} />
