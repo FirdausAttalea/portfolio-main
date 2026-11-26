@@ -1,0 +1,70 @@
+[
+  {
+    "id": "task-dashboard",
+    "title": "Parago: Fleet Management & Approval Dashboard",
+    "type": "Self Project",
+    "date": "2026",
+    "duration": "8-10 Weeks",
+    "role": "Full Stack Developer",
+    "description": "An internal operational tool that consolidates task tracking, approval workflows, and sprint visibility into one interface, replacing fragmented tracking across Jira or Linear, Slack, email, and spreadsheets. Built per PRD v1.0 across four two-week sprints covering test plan, product journey, and product execution, with RBAC, SSO authentication, overdue detection, and CSV/PDF export.",
+    "image": "/img/coding/parago-pict.png",
+    "icon": "uil-code",
+    "link": "#",
+    "tags": [
+      "Backend",
+      "Frontend",
+      "SQL",
+      "Workflow",
+      "RBAC"
+    ],
+    "tools": [
+      {
+        "name": "Node.js",
+        "src": "/img/tools/node-js-logo.png"
+      },
+      {
+        "name": "JavaScript",
+        "src": "/img/tools/javascript-logo.png"
+      },
+      {
+        "name": "SQL",
+        "src": "/img/tools/sql-logo.png"
+      },
+      {
+        "name": "GitHub",
+        "src": "/img/tools/github-logo.png"
+      }
+    ]
+  },
+  {
+    "id": "data-pipeline",
+    "title": "DataForge: Data Pipeline & Reporting System",
+    "type": "Data Engineering",
+    "date": "2026",
+    "duration": "2 Months",
+    "role": "Fullstack Engineer",
+    "description": "An extract-transform-load pipeline that consolidates operational data from multiple sources into a structured warehouse for reporting and analysis. Part of the coding builds delivering structured data for dashboards and business decisions.",
+    "image": "/img/coding/dataforge-pict.png",
+    "icon": "uil-code",
+    "link": "#",
+    "tags": [
+      "ETL",
+      "Data Warehouse",
+      "Analytics"
+    ],
+    "tools": [
+      {
+        "name": "Python",
+        "src": "/img/tools/python-logo.png"
+      },
+      {
+        "name": "SQL",
+        "src": "/img/tools/sql-logo.png"
+      },
+      {
+        "name": "GitHub",
+        "src": "/img/tools/github-logo.png"
+      }
+    ]
+  }
+]
