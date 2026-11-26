@@ -54,6 +54,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
   const destination = project.link && project.link !== '#'
     ? { external: project.link }
+    : project.id === 'task-dashboard' || project.id === 'data-pipeline'
+    ? { internal: `/coding/${project.id}` }
     : { internal: `/projects/${project.id}` };
 
   return (
