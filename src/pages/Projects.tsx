@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowUpRight, Layers, Rocket, Sparkles } from 'lucide-react';
+import { ArrowUpRight, Code, Layers, Rocket, Sparkles } from 'lucide-react';
 import { useReducedMotion } from 'framer-motion';
 import projectsDataFallback from '../data/projects.json';
 import deliverablesData from '../data/deliverables.json';
+import projectsCodingData from '../data/projects-coding.json';
 import SectionHeader from '../components/common/SectionHeader';
 import ProjectCard from '../components/common/ProjectCard';
 
@@ -169,6 +170,27 @@ const Projects: React.FC = () => {
         />
         <div className="projects-grid">
           {projects.map((project, index) => (
+            <ProjectCard
+              key={project.id || index}
+              project={project}
+              buttonText="See Details"
+              buttonClass="btn-small"
+            />
+          ))}
+        </div>
+      </section>
+
+      {/* Coding Projects Showcase Section */}
+      <section id="coding-projects" className="section-new">
+        <SectionHeader
+          icon={<Code size={20} />}
+          iconClassName="project-icon"
+          title="Product"
+          titleSpan="Coding Projects"
+          subtitle="Hands-on technical builds spanning backend systems, data pipelines, and analytics."
+        />
+        <div className="projects-grid">
+          {projectsCodingData.map((project, index) => (
             <ProjectCard
               key={project.id || index}
               project={project}
