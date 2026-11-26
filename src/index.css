@@ -2716,8 +2716,9 @@ main {
    LAYOUT STYLES (NAVBAR & FOOTER)
    ========================================== */
 
-/* Navbar / Header */
-header {
+/* Navbar / Header — scoped to the topbar so page hero headers
+   (project / product banners) never inherit fixed positioning or z-index */
+header.navbar {
   position: fixed;
   top: 0;
   width: 100%;
