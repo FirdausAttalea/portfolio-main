@@ -4595,3 +4595,86 @@ footer.footer-purple .footer-passion {
   border-radius: 0 0 19px 19px;
   height: max-content;
 }
+
+/* ==========================================
+   CODING PROJECT DETAIL — TECH AESTHETIC
+   ========================================== */
+
+.coding-detail-theme .detail-hero-img {
+  filter: brightness(0.5) saturate(1.15);
+}
+
+.coding-detail-theme .detail-tag {
+  font-family: 'DM Sans', monospace;
+  letter-spacing: 0.04em;
+}
+
+/* GSAP scanner + bits live inside the hero graphic */
+.coding-graphic-root {
+  overflow: hidden;
+}
+
+.cmg-ring {
+  will-change: transform, opacity;
+}
+
+.cmg-bit {
+  font-variant-numeric: tabular-nums;
+  user-select: none;
+  pointer-events: none;
+  will-change: transform, opacity;
+}
+
+/* Accent list — terminal bullet style */
+.coding-accent-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.coding-accent-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.coding-accent-list li::before {
+  content: '›';
+  position: absolute;
+  left: 0.25rem;
+  color: #63b3ed;
+  font-weight: 700;
+}
+
+/* Feature cards — subtle system border */
+.coding-feature {
+  border-left: 3px solid #63b3ed;
+}
+
+.coding-feature .detail-feature-check {
+  color: #63b3ed;
+}
+
+/* Tech stack cards */
+.tech-card strong {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.tech-card .detail-design-label {
+  color: #63b3ed;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.7rem;
+}
+
+/* Sidebar tool strip glow */
+.coding-detail-theme .detail-sidebar-tools img {
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.coding-detail-theme .detail-sidebar-tools img:hover {
+  transform: translateY(-3px) scale(1.08);
+  filter: drop-shadow(0 4px 8px rgba(99, 179, 237, 0.35));
+}
