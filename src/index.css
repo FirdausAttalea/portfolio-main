@@ -2958,10 +2958,18 @@ nav {
    ========================================== */
 
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 1000;
   transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Keep anchored section headers visible below the fixed topbar */
+section[id],
+div[id] {
+  scroll-margin-top: 80px;
 }
 
 .navbar.scrolled {
