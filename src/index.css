@@ -3228,7 +3228,8 @@ footer.footer-purple .footer-passion {
 }
 
 .btn-small:hover {
-  background: var(--badge-color);
+  background: var(--accent) !important;
+  color: white !important;
 }
 
 
